@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="home">
+        <!-- navigation -------- -->
+
+        <nav>
+            <!-- logo -->
+            <a href="#" class="logo">KM-RY</a>
+            <!-- menu -->
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact us</a></li> 
+            </ul>
+        </nav>
+
+        <!-- text --------- -->
+        <div class="text-container" id="home">
+            <p>Hello,</p>
+            <p>I'M KAREEM</p>
+            <p>I am Front-End Developer<br> & Web Developer</p>
+            <button class="btn">Hire me</button>
+            <button class="down-cv">Download CV</button>
+        </div>
+
+    </section>
+
+    <section>
+        <!-- about section --------- -->
+        <div class="about-container" id="about">
+            <!-- img---------- -->
+            <div class="img">
+            <img src="img/pic.jpg" class="image" alt="">
+            </div>
+            <!-- about-text ---------- -->
+            <div class="about-text">
+                <p>About Me</p>
+                <p>Developer & Designer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta repellat eveniet velit ab? Minus, cumque suscipit alias, eius asperiores magni consequuntur iure labore harum fugit perspiciatis adipisci, sed animi.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores aliquam a, adipisci commodi modi doloremque nulla beatae illum doloribus odio.</p>
+
+                <!-- button ------ -->
+                <button>Hire Me</button>
+                <button>Download CV</button>
+            </div>
+        </div>
+
+        <!-- services -------->
+        <div class="services" id="services">
+            <!-- text ---------- -->
+            <div class="services-text">
+                <p>Services</p>
+                <p>Services required</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt optio harum autem aspernatur et minus vitae consequatur, ex natus eos non minima voluptates asperiores! Veritatis voluptate, quaerat, alias fuga quo quisquam officia minus incidunt error sint, blanditiis eos officiis.</p>
+            </div>
+            <!-- box ----------- -->
+            <div class="box-container">
+                <!-- --- 1------------ -->
+
+                <div class="box-1 box">
+                    <div class="layer">
+                    <span>1</span>
+                    <p class="heading">Web Design</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis dolor accusantium provident pariatur amet nostrum vero sapiente perferendis, cum tempore soluta unde accusamus impedit animi consequatur praesentium minus! Quibusdam.</p>
+                    <button>Read More</button>
+                </div>
+                </div>
+                <!-- --- 2------- -->
+                <div class="box-2 box">
+                     <div class="layer">
+                    <span>2</span>
+                    <p class="heading">Web Development</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis dolor accusantium provident pariatur amet nostrum vero sapiente perferendis, cum tempore soluta unde accusamus impedit animi consequatur praesentium minus! Quibusdam.</p>
+                    <button>Read More</button>
+                </div>
+                </div>
+                <!-- --- 3------ -->
+                <div class="box-3 box">
+                     <div class="layer">
+                    <span>3</span>
+                    <p class="heading">Security/SEO</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis dolor accusantium provident pariatur amet nostrum vero sapiente perferendis, cum tempore soluta unde accusamus impedit animi consequatur praesentium minus! Quibusdam.</p>
+                    <button>Read More</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- contact me --------- -->
+        <div class="contact-me" id="contact">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Contact Me</button>
+        </div>
+
+        <!-- footer ------------------ -->
+        <footer>
+            <p>Kareem Roshdy</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem nam doloribus sed laudantium, atque corrupti?</p>
+            <!-- social ------- -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                
+            </div>
+            <!-- copyright -->
+            <p class="copyright">Copyright by KM-RY</p>
+        </footer>
+        <!-- social bar --------- -->
+        <div class="a-social-b">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+
+    </section>
+
+
+    <script>
+        let navbar= document.querySelector('.navbar');
+        let menuBtn= document.querySelector('#menu-btn');
+
+        menuBtn.onclick = () =>{
+            navbar.classList.toggle('active');
+            menuBtn.classList.toggle('fa-times');
+        }
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            menuBtn.classList.remove('fa-times');
+
+        }
+    </script>
+</body>
+</html>
